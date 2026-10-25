@@ -1,101 +1,78 @@
 * {
-	font-family: verdana;
+    font-family: verdana;
 }
+
 a:any-link {
-	text-decoration-line: none;
-	color: black;
+    text-decoration-line: none;
+    color: black;
 }
+
 body {
-	max-width: 980px;
-	margin-left: auto;
-	margin-right: auto;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 body#background {
-	background-image: url("img/001.png");
-	background-position: center;
-	background-repeat: no-repeat;
+    background-image: url("img/001.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 #banner {
-	width: 100%;
+    width: 100%;
 }
 
-.rechthoek{
-  width: 980px;
-  height: 50px;
-  border: 0px solid black;
-  padding: 10px;
+
+.bar {
+    background-color: #F7DA5C;
+    width: 100%;
 }
 
-.rood{
-  background-color: red;
-}
-
-.pokemonkaart {
-    border: 0px;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    width: 250px;
-    float: left;
-}
-
-.pokemonkaart * {
+.bar p {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 }
-.achtergrond-geel {
-    background-color: rgb(247,218,92);
-	height: 30px;
-	padding: 20px;
+
+
+article p {
+    text-indent: 50px;
 }
 
-.achtergrond-groen {
-    background-color: rgba(202, 255, 196, 1); 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid lightgray;
 }
 
-h1 {
-    font-size: 24px;
-    margin: 5px;
-	font-weight: bold;
-    /* text-align: center; */
+th, td {
+    border: 1px solid lightgray;
+    padding: 10px;
 }
 
-h2 {
-    font-size: 14px;
-    color: black;
-    margin: 0 0 10px 0;
-	font-weight: bold;
-    /* text-align: center; */
+.rechts {
+    text-align: right;
 }
 
-.type1 {
-    font-weight: bold;
-    color: black;
-    background-color: yellow;
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin: 10px auto;
-    width: 100px
+.gecentreerd {
+    text-align: center;
 }
 
-.type2 {
-    font-weight: bold;
-    color: black;
-    background-color: green;
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin: 10px auto;
-    width: 100px
+.pkmn-img {
+    width: 40px;
+    height: 40px;
 }
 
-p {
-    text-align: left;
+.type-img {
+    width: 16px;
+    height: 16px;
 }
 
-.balk {
-	text-align: center;
+
+.float-right {
+    float: right;
 }
 
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
