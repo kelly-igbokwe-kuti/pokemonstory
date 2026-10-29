@@ -56,11 +56,7 @@ th, td {
     float: right;
 }
 
-.rectangle {
-	margin: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
+
 .indents {
 	text-indent: 50px;
 }
@@ -80,7 +76,6 @@ li img {
 .table-icons img {
 	width: 16px;
 	height: 16px;
-	text-align: center;
 	}
 .table-icons {
 	text-align: center;
