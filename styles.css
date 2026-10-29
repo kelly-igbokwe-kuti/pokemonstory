@@ -86,4 +86,9 @@ li img {
 .table-icons {
 	text-align: center;
 	}
-
+.align1{
+	text-align: right;
+}
+.align2{
+	text-align: left;
+}
