@@ -70,3 +70,13 @@ li img {
 	width: 16px;
 	height: 16px;
 }
+
+.table-image {
+	width: 20px;
+	text-align: center;
+	}
+.table-icons {
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	}
