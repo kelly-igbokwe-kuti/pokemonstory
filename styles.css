@@ -72,11 +72,18 @@ li img {
 }
 
 .table-image img {
-	width: 20px;
+	width: 40px;
+	}
+.table-image {
 	text-align: center;
 	}
+
 .table-icons img {
 	width: 16px;
 	height: 16px;
 	text-align: center;
 	}
+.table-icons {
+	text-align: center;
+	}
+
