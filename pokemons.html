@@ -1,124 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      <title>Pokemons</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="styles.css">
-      </head>
-  <body id="background">
-    <img src="images/banner.png" id="banner">
-<div class="bar">
-  <p>
- <a href="index.html">story</a>
-     —
-<a href="pokemons.html">pokemons</a>
-     —
-<a href="types.html">types</a>
-  </p>
-</div>
-    <h1>
-      The Pokemons ⚡🔥☠️🪽🪲🧚‍♀️💧
-    </h1>
-      <table>
-        <tbody>
-  <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>afbeelding</th>
-     <th>Type1</th>
-     <th>Type2</th>
-     <th>HP</th>
-     <th>Speed</th>
-  </tr>
-  <tr>
-    <td class="align1">1</td>
-    <td>Bulbasaur</td>
-    <td class="table-image">
-      <img src="images/001.png"/>
-    </td>
-    
-    <td class="table-icons"><img src="images/grass.svg"/>
-      <br/>grass</td>
-    
-    <td class="table-icons"><img src="images/poison.svg"/>
-      <br/>poison</td>
-    <div class="align1">
-    <td>45</td>
-    <td>45</td>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokémon — overzicht</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="background">
+    <img src="images/banner.png" id="banner" alt="Pokémon-banner">
+    <nav class="bar" aria-label="Hoofdnavigatie">
+        <p><a href="index.html">story</a> — <a href="pokemons.html">pokemons</a> — <a href="types.html">types</a></p>
+    </nav>
+
+    <h1>The Pokémons</h1>
+    <p>Een oefentabel met Pokémon, afbeeldingen en eigenschappen.</p>
+    <!-- Elke Pokémon is precies één tabelrij. Een <div> hoort niet rechtstreeks in een <tr>. -->
+    <div class="table-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Afbeelding</th>
+                    <th scope="col">Type 1</th>
+                    <th scope="col">Type 2</th>
+                    <th scope="col">HP</th>
+                    <th scope="col">Speed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align1">1</td>
+                    <td>Bulbasaur</td>
+                    <td class="table-image"><img src="images/001.png" alt="Bulbasaur"></td>
+                    <td class="table-icons"><img src="images/grass.svg" alt="">grass</td>
+                    <td class="table-icons"><img src="images/poison.svg" alt="">poison</td>
+                    <td>45</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td class="align1">2</td>
+                    <td>Ivysaur</td>
+                    <td class="table-image"><img src="images/002.png" alt="Ivysaur"></td>
+                    <td class="table-icons"><img src="images/grass.svg" alt="">grass</td>
+                    <td class="table-icons"><img src="images/poison.svg" alt="">poison</td>
+                    <td>60</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td class="align1">3</td>
+                    <td>Venusaur</td>
+                    <td class="table-image"><img src="images/003.png" alt="Venusaur"></td>
+                    <td class="table-icons"><img src="images/grass.svg" alt="">grass</td>
+                    <td class="table-icons"><img src="images/poison.svg" alt="">poison</td>
+                    <td>80</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td class="align1">4</td>
+                    <td>Charmander</td>
+                    <td class="table-image"><img src="images/004.png" alt="Charmander"></td>
+                    <td class="table-icons"><img src="images/fire.svg" alt="">fire</td>
+                    <td>—</td>
+                    <td>45</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td class="align1">5</td>
+                    <td>Charmeleon</td>
+                    <td class="table-image"><img src="images/005.png" alt="Charmeleon"></td>
+                    <td class="table-icons"><img src="images/fire.svg" alt="">fire</td>
+                    <td>—</td>
+                    <td>45</td>
+                    <td>45</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-  </tr>
-        
-  <tr>
-    <td class="align1">2</td>
-    <td>Ivysaur</td>
-    <td class="table-image">
-      <img src="images/002.png"/>
-    </td>
-    
-    <td class="table-icons"><img src="images/grass.svg"/>
-      <br/>grass</td>
-    
-    <td class="table-icons"><img src="images/poison.svg"/>
-      <br/>poison</td>
-    <div class="align1">
-    <td>60</td>
-    <td>60</td>
-    </div>
-  </tr>
-           <tr>
-    <td class="align1">3</td>
-    <td>Venusaur</td>
-    <td class="table-image">
-      <img src="images/003.png"/>
-    </td>
-    
-    <td class="table-icons"><img src="images/grass.svg"/>
-      <br/>grass</td>
-    
-    <td class="table-icons"><img src="images/poison.svg"/>
-      <br/>poison</td>
-    <div class="align1">
-    <td>80</td>
-    <td>80</td>
-    </div>
-  </tr>
-           <tr>
-    <td class="align1">4</td>
-    <td>Charmander</td>
-    <td class="table-image">
-      <img src="images/004.png"/>
-    </td>
-    
-    <td class="table-icons"><img src="images/fire.svg"/>
-      <br/>grass</td>
-  <td></td>
-    <div class="align1">
-    <td>45</td>
-    <td>45</td>
-    </div>
-  </tr>
-           <tr>
-    <td class="align1">5</td>
-    <td>Charmeleon</td>
-    <td class="table-image">
-      <img src="images/005.png"/>
-    </td>
-    
-    <td class="table-icons"><img src="images/fire.svg"/>
-      <br/>grass</td>
-    <td></td>
-    <div class="align1">
-    <td>45</td>
-    <td>45</td>
-    </div>
-  </tr>
-  </tbody>
-</table>
-      <div class="bar">
-      <p>
-        (c) 2026 by kelly igbokwe kuti
-      </p>
-      </div>
-  </body>
+
+    <footer class="bar"><p>© 2026 — Pokémon-webdesignoefening</p></footer>
+</body>
 </html>
