@@ -1,13 +1,18 @@
+<!-- Elke Pokémon krijgt één tabelrij; elke eigenschap komt in een afzonderlijke cel. -->
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <!-- viewport geeft mobiele browsers een passende schermschaal. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pokémon — overzicht</title>
+    <!-- De drie HTML-pagina's gebruiken dezelfde stijlen. -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="background">
+    <!-- Dit relatieve pad verwijst naar de banner in de map images. -->
     <img src="images/banner.png" id="banner" alt="Pokémon-banner">
+    <!-- nav duidt de hoofdlinks aan; aria-label geeft context aan schermlezers. -->
     <nav class="bar" aria-label="Hoofdnavigatie">
         <p><a href="index.html">story</a> — <a href="pokemons.html">pokemons</a> — <a href="types.html">types</a></p>
     </nav>
@@ -15,8 +20,10 @@
     <h1>The Pokémons</h1>
     <p>Een oefentabel met Pokémon, afbeeldingen en eigenschappen.</p>
     <!-- Elke Pokémon is precies één tabelrij. Een <div> hoort niet rechtstreeks in een <tr>. -->
+    <!-- De wrapper met overflow-x:auto maakt een brede tabel horizontaal schuifbaar. -->
     <div class="table-scroll">
         <table>
+            <!-- De koprij bevat <th scope="col">: titels die bij alle cellen van hun kolom horen. -->
             <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -28,11 +35,14 @@
                     <th scope="col">Speed</th>
                 </tr>
             </thead>
+            <!-- De echte gegevens staan in <tbody>; <tr> betekent rij en <td> gewone cel. -->
             <tbody>
                 <tr>
                     <td class="align1">1</td>
                     <td>Bulbasaur</td>
+                    <!-- alt beschrijft de sprite; .table-image bepaalt de grootte van de afbeelding. -->
                     <td class="table-image"><img src="images/001.png" alt="Bulbasaur"></td>
+                    <!-- alt="" maakt het decoratieve icoon stil voor schermlezers; de typenaam volgt als tekst. -->
                     <td class="table-icons"><img src="images/grass.svg" alt="">grass</td>
                     <td class="table-icons"><img src="images/poison.svg" alt="">poison</td>
                     <td>45</td>
@@ -57,6 +67,7 @@
                     <td>80</td>
                 </tr>
                 <tr>
+                    <!-- Geen tweede type? Laat de kolom staan en gebruik een streepje als waarde. -->
                     <td class="align1">4</td>
                     <td>Charmander</td>
                     <td class="table-image"><img src="images/004.png" alt="Charmander"></td>
@@ -78,6 +89,7 @@
         </table>
     </div>
 
+    <!-- De footer gebruikt dezelfde gele .bar-opmaak als het navigatiemenu. -->
     <footer class="bar"><p>© 2026 — Pokémon-webdesignoefening</p></footer>
 </body>
 </html>
