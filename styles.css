@@ -86,3 +86,15 @@ li img {
 .align2{
 	text-align: left;
 }
+
+/* Een brede tabel blijft op een klein scherm horizontaal leesbaar. */
+.table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* De tekst bij de type-iconen wordt niet tegen de afbeelding gedrukt. */
+.table-icons img {
+    display: block;
+    margin: 0 auto 4px;
+}
