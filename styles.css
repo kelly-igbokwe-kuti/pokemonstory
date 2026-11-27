@@ -1,34 +1,41 @@
+/* De universele selector * stelt Verdana voor alle elementen als standaardlettertype in. */
 * {
     font-family: verdana;
 }
 
+/* :any-link geldt voor alle gewone en bezochte links. */
 a:any-link {
     text-decoration-line: none;
     color: black;
 }
 
+/* max-width beperkt de paginabreedte; auto-marges plaatsen haar gecentreerd. */
 body {
     max-width: 980px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Alleen de body met id=background krijgt deze afbeelding; # betekent een id-selector. */
 body#background {
     background-image: url("images/001.png");
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* De banner vult de breedte van zijn bovenliggende pagina-element. */
 #banner {
     width: 100%;
 }
 
 
+/* De class .bar geeft de navigatiebalk en footer dezelfde gele achtergrond. */
 .bar {
     background-color: #F7DA5C;
     width: 100%;
 }
 
+/* Met een spatie selecteer je alle <p>-elementen binnen .bar. */
 .bar p {
     margin: 0px;
     padding-top: 10px;
@@ -37,42 +44,51 @@ body#background {
 }
 
 
+/* Deze regel werkt alleen voor paragrafen binnen een <article>; op deze pagina's ontbreekt zo'n tag. */
 article p {
     text-indent: 50px;
 }
 
 
+/* border-collapse laat aangrenzende tabelcellen één gemeenschappelijke rand delen. */
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
+/* De komma laat één regel gelden voor zowel kopcellen als gewone datacellen. */
 th, td {
     border: 1px solid lightgray;
     padding: 10px;
 }
 
+/* Float plaatst de afbeelding rechts en laat de volgende inhoud erlangs vloeien. */
 .float-right {
     float: right;
 }
 
 
+/* Een optionele class voor inspringing van de eerste tekstregel. */
 .indents {
 	text-indent: 50px;
 }
 
+/* Type-iconen binnen lijsten krijgen een klein formaat. */
 li img {
 	width: 16px;
 	height: 16px;
 }
 
+/* Alleen afbeeldingen in cellen met .table-image worden 40px breed. */
 .table-image img {
 	width: 40px;
 	}
+/* centreert de afbeelding binnen de cel. */
 .table-image {
 	text-align: center;
 	}
 
+/* Type-pictogrammen worden kleiner weergegeven dan Pokémon-sprites. */
 .table-icons img {
 	width: 16px;
 	height: 16px;
@@ -80,9 +96,23 @@ li img {
 .table-icons {
 	text-align: center;
 	}
+/* Helperklassen voor rechts en links uitlijnen van tekst. */
 .align1{
 	text-align: right;
 }
 .align2{
 	text-align: left;
+}
+
+/* Een brede tabel blijft op een klein scherm horizontaal leesbaar. */
+/* Op smallere schermen kan de tabel horizontaal worden verschoven. */
+.table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* De tekst bij de type-iconen wordt niet tegen de afbeelding gedrukt. */
+.table-icons img {
+    display: block;
+    margin: 0 auto 4px;
 }
