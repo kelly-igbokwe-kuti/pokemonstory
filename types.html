@@ -1,13 +1,18 @@
+<!-- Dit is de types-pagina van de oefenwebsite: een <ol> met <li>-onderdelen. -->
 <!DOCTYPE html>
 <html lang="nl">
   <head>
       <title>Pokémon — types</title>
+      <!-- UTF-8 voorkomt tekensetproblemen; viewport ondersteunt mobiele schermen. -->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Een gedeeld CSS-bestand maakt de opmaak op alle pagina's gelijk. -->
       <link rel="stylesheet" href="styles.css">
       </head>
+  <!-- CSS-selector body#background voegt de achtergrondafbeelding toe. -->
   <body id="background">
     <img src="images/banner.png" id="banner" alt="Pokémon-banner">
+<!-- Deze navigatiebalk verbindt de andere twee HTML-pagina's. -->
 <div class="bar">
   <p>
 <a href="index.html">story</a>
@@ -20,7 +25,9 @@
     <h1>
       The Pokémon types ⚡🔥☠️🪽🪲🧚‍♀️💧
     </h1>
+    <!-- De class float-right verplaatst de afbeelding naar rechts. -->
     <img class="float-right" src="images/005.png" alt="Charmeleon"/>
+    <!-- Een genummerde lijst maakt vanzelf 1, 2, 3...; de SVG-bestanden blijven scherp bij schalen. -->
     <ol>
       <li> <img src="images/normal.svg"/>Normal</li>
       <li> <img src="images/fire.svg"/>Fire</li>
@@ -37,10 +44,12 @@
       <li> <img src="images/rock.svg"/>Rock</li>
       <li> <img src="images/ghost.svg"/>Ghost</li>
       <li> <img src="images/dragon.svg" alt=""/>Dragon</li>
+      <!-- De laatste drie types gebruiken SVG-bestanden die al in de images-map stonden. -->
       <li><img src="images/dark.svg" alt=""/>Dark</li>
       <li><img src="images/steel.svg" alt=""/>Steel</li>
       <li><img src="images/fairy.svg" alt=""/>Fairy</li>
     </ol>
+    <!-- Deze tweede .bar is de balk onderaan, niet de navigatiebalk bovenaan. -->
     <div class="bar">
       <p>
         (c) 2026 by kelly igbokwe kuti
